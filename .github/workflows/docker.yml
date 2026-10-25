@@ -29,5 +29,5 @@ jobs:
           file: ./Test/Dockerfile
           push: true
           tags: |
-            zancinabalanci1/test-api:latest
-            zancinabalanci1/test-api:${{ github.sha }}
+            zancinabalanci/test-api:latest
+            zancinabalanci/test-api:${{ github.sha }}
