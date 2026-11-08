@@ -20,4 +20,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Preverjanje delovanja API-ja
+app.MapGet("/", () => Results.Ok("Test API uspešno deluje!"));
+
+// Health check
+app.MapGet("/health", () => Results.Ok("Healthy"));
+
 app.Run();
